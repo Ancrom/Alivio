@@ -32,11 +32,12 @@
 		}
 	.navbar__login {
   		display: flex;
+		align-items: center;
 	}
 		.login__signin {
   			display: flex;
   			align-items: center;
- 			padding: 0 30px;
+ 			padding: 13px 50px;
 		}
 		.login__button {
   			padding: 13px 50px;
@@ -61,17 +62,29 @@ a:active {
 @media all and (max-width: 768px) {
 	.wrapper {
 		max-width: 100%;
-		padding: 0 10px;
 	}
-	.menu__item {
-		padding: 0 10px;
+	.navbar {
+		flex-flow: column nowrap;
+		font-size: 22px;
 	}
-	.login__signin {
-		padding: 0 15px 0 0;
-	}
-	.login__button {
-		text-align: center;
-	}
+		.navbar__menu {
+			flex-flow: row wrap;
+			justify-content: space-between;
+			padding-bottom: 10px;
+		}
+			.menu__item {
+				padding: 15px;
+			}
+		.navbar__login {
+			flex-flow: row nowrap;
+			justify-content: space-between;
+		}
+			.login__signin {
+				display: flex;
+				padding: 13px 20px;
+				background-color: #00523a;
+				color: white;
+			}
 }
 @media all and (max-width: 360px) {
 	.wrapper {
@@ -92,15 +105,12 @@ a:active {
 		.navbar__login {
 			flex-flow: row nowrap;
 			justify-content: space-between;
-			align-items: center;
 		}
 			.login__signin {
 				display: flex;
-				justify-content: center;
-				
-			}
-			.login__button {
-
+				padding: 13px 20px;
+				background-color: #00523a;
+				color: white;
 			}
 }
 
