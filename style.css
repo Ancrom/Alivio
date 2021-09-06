@@ -16,10 +16,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
   font-size: 20px;
   line-height: 20px;
   color: black;
 }
+	.navbar__logo {
+		display: flex;
+	}
 	.navbar__menu {
  		display: flex;
 	}
@@ -36,9 +40,13 @@
 		}
 		.login__button {
   			padding: 13px 50px;
- 			background-color: #01996d;
+			background-color: #01996d;
 			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
+		
 
 
 
@@ -50,23 +58,49 @@ a:active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+@media all and (max-width: 768px) {
+	.wrapper {
+		max-width: 100%;
+		padding: 0 10px;
+	}
+	.menu__item {
+		padding: 0 10px;
+	}
+	.login__signin {
+		padding: 0 15px 0 0;
+	}
+	.login__button {
+		text-align: center;
+	}
+}
 @media all and (max-width: 360px) {
 	.wrapper {
 		max-width: 100%;
 	}
 	.navbar {
 		flex-flow: column nowrap;
+		font-size: 22px;
 	}
 		.navbar__menu {
-			flex-flow: column nowrap;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			padding-bottom: 10px;
 		}
+			.menu__item {
+				padding: 15px;
+			}
 		.navbar__login {
-			flex-flow: column nowrap;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
 		}
 			.login__signin {
 				display: flex;
 				justify-content: center;
-				padding: 0;
+				
+			}
+			.login__button {
+
 			}
 }
 
