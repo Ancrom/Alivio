@@ -121,15 +121,48 @@ a:active {
 				background-color: #00523a;
 				color: white;
 			}
-.header__background {
-	background-size: cover;
+	.header__background {
+		background-size: cover;
+	}
+		.background__card {
+			width: 100%;
+			padding: 100px 0;
+		}
 }
+@media all and (min-width: 1024px) {
+	.background__img {
+		display: none;
+	}
+	.background__img > img {
+			width: 100%;
+		}
+}
+@media all and (max-width: 1024px) {
+	.header__background {
+		background-image: none;
+	}
+		.background__img > img {
+			display: block;
+			width: 100%;
+		}
 	.background__card {
-		width: 100%;
-		padding: 100px 0;
+		padding: 10px 0;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+		.card__content {
+			font-size: 25px;
+			padding: 15px 0 35px;
+		}
+		.card__title > br, .card__content > br {
+			display: none;
+		}
+}
+@media all and (max-width: 768px) {
+	.card__title > br {
+		display: block;
 	}
 }
-
 @media all and (max-width: 360px) {
 	.navbar {
 		font-size: 22px;
