@@ -48,6 +48,39 @@
 			align-items: center;
 		}
 		
+.header__background {
+	background-image: url(img/BG.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}	
+	.background__card {
+		padding: 175px 0 335px 0;
+		width: 35%;
+	}
+		.card__title {
+			font-family: Georgia;
+			font-weight: bold;
+			font-size: 65px;
+			line-height: 74px;
+			color: #01996D;
+		}
+		.card__content {
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 31px;
+			color: #484848;
+			padding: 30px 0 50px;
+		}
+		.card__button {
+			display: inline-flex;
+			align-items: center;
+			padding: 20px 50px;
+			background: #01996D;
+			border: 1px solid #01996D;
+			box-sizing: border-box;
+			border-radius: 4px;
+			color: white;
+	}	
 
 
 
@@ -59,13 +92,13 @@ a:active {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1366px) {
 	.wrapper {
 		max-width: 100%;
 	}
 	.navbar {
 		flex-flow: column nowrap;
-		align-items: stretch;
+		align-items: center;
 	}
 		.navbar__logo {
 			align-self: center;
@@ -88,7 +121,15 @@ a:active {
 				background-color: #00523a;
 				color: white;
 			}
+.header__background {
+	background-size: cover;
 }
+	.background__card {
+		width: 100%;
+		padding: 100px 0;
+	}
+}
+
 @media all and (max-width: 360px) {
 	.navbar {
 		font-size: 22px;
