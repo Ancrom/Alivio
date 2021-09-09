@@ -79,7 +79,6 @@ a:active {
 				padding: 15px;
 			}
 		.navbar__login {
-			flex-flow: row nowrap;
 			justify-content: space-between;
 			align-self: center;
 		}
@@ -91,11 +90,7 @@ a:active {
 			}
 }
 @media all and (max-width: 360px) {
-	.wrapper {
-		max-width: 100%;
-	}
 	.navbar {
-		flex-flow: column nowrap;
 		font-size: 22px;
 	}
 	.login__signin {
