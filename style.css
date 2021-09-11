@@ -50,7 +50,7 @@
 		
 .header__background {
 	background-image: url(img/BG.png);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 }	
 	.background__card {
@@ -80,9 +80,36 @@
 			box-sizing: border-box;
 			border-radius: 4px;
 			color: white;
-	}	
+		}	
 
-
+.main__content {
+	display: flex;
+}
+	.content__title {
+		display: flex;
+		flex-flow: column;
+		width: 50%;
+	}
+		.title__upper {
+			font-size: 24px;
+			line-height: 150%;
+		}
+		.title__bottom {
+			font-family: Georgia;
+			font-weight: bold;
+			font-size: 50px;
+			line-height: 150%;
+			color: #01996d;
+		}
+	.content__text {
+		display: flex;
+		align-items: flex-end;
+		width: 50%;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 150%;
+		padding: 0 0 10px;
+	}
 
 a:visited,
 a:link,
@@ -94,40 +121,43 @@ a:active {
 }
 @media all and (max-width: 1366px) {
 	.wrapper {
-		max-width: 100%;
+		width: 100%;
 	}
-	.navbar {
-		flex-flow: column nowrap;
-		align-items: center;
-	}
-		.navbar__logo {
-			align-self: center;
+		.navbar {
+			flex-flow: column nowrap;
+			align-items: center;
 		}
-		.navbar__menu {
-			flex-flow: row wrap;
-			justify-content: space-between;
-			padding-bottom: 10px;
-		}
-			.menu__item {
-				padding: 15px;
+			.navbar__logo {
+				align-self: center;
 			}
-		.navbar__login {
-			justify-content: space-between;
-			align-self: center;
-		}
-			.login__signin {
-				display: flex;
-				padding: 13px 20px;
-				background-color: #00523a;
-				color: white;
+			.navbar__menu {
+				flex-flow: row wrap;
+				justify-content: space-between;
+				padding-bottom: 10px;
 			}
-	.header__background {
-		background-size: cover;
-	}
-		.background__card {
-			width: 100%;
-			padding: 100px 0;
+				.menu__item {
+					padding: 15px;
+				}
+			.navbar__login {
+				justify-content: space-between;
+				align-self: center;
+			}
+				.login__signin {
+					display: flex;
+					padding: 13px 20px;
+					background-color: #00523a;
+					color: white;
+				}
+		.header__background {
+			/* background-size: cover; */
 		}
+			.background__card {
+				width: 100%;
+				padding: 100px 0;
+			}
+	.main__content {
+		
+	}
 }
 @media all and (min-width: 1024px) {
 	.background__img {
