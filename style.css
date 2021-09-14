@@ -84,6 +84,7 @@
 
 .main__content {
 	display: flex;
+	margin: 160px 0;
 }
 	.content__title {
 		display: flex;
@@ -102,13 +103,11 @@
 			color: #01996d;
 		}
 	.content__text {
-		display: flex;
-		align-items: flex-end;
 		width: 50%;
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 150%;
-		padding: 0 0 10px;
+		padding: 55px 20px 10px;
 	}
 
 a:visited,
@@ -187,21 +186,40 @@ a:active {
 		.card__title > br, .card__content > br {
 			display: none;
 		}
+	.main__content {
+		flex-flow: wrap;
+		margin: 50px 0;
+	}
+		.content__text {
+			align-items: flex-start;
+			padding: 0 20px;
+			font-size: 25px;
+		}
+		.content__title, .content__text {
+			padding: 10px 0;
+			width: 100%;
+		}
 }
 @media all and (max-width: 768px) {
 	.card__title > br {
 		display: block;
 	}
+	.main__content {
+		margin: 50px 0;
+	}
 }
 @media all and (max-width: 360px) {
 	.navbar {
 		font-size: 22px;
-	}
-	.login__signin {
-		padding: 10px 15px;
-	}
-	.login__button {
-		padding: 10px 40px;
+		}
+		.login__signin {
+			padding: 10px 15px;
+		}
+		.login__button {
+			padding: 10px 40px;
+		}
+	.title__bottom, .card__title  {
+		font-size: 45px;
 	}
 }
 
