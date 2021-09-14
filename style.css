@@ -156,6 +156,12 @@
 		.box__img > img {
 			width: 100%;
 		}
+		.box02 {
+			margin: 285px 0 0;
+		}
+		.box03 {
+			margin: 50px 0 0;
+		}
 
 
 
@@ -261,6 +267,9 @@ a:active {
 	}
 	.card__box {
 		width: 100%;
+	}
+	.box02, .box03 {
+		margin: 50px 0 0;
 	}
 		.alivio {
 			left: 18%;
