@@ -109,6 +109,55 @@
 		line-height: 150%;
 		padding: 55px 20px 10px;
 	}
+	.main__cards-container {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+	}
+		.card__box {
+			width: 30%;
+		}
+			.box__title {
+				color: #01996D33;
+				font-size: 150px;
+				font-family: Georgia;
+				line-height: 225px;
+				position: relative;
+			}
+				.title__text {
+					font-size: 30px;
+					color: black;
+					line-height: 45px;
+					font-weight: 500;
+					font-weight: bold;
+					font-family: Georgia, 'Times New Roman', Times, serif;
+					
+				}
+				.box__text {
+					font-size: 20px;
+					line-height: 30px;
+					padding: 10px 0 60px;
+				}
+					.perso {
+						position: absolute;
+						left: 22%;
+						top: 60%;
+					}
+					.write {
+						position: absolute;
+						left: 18%;
+						top: 60%;
+					}
+					.alivio {
+						position: absolute;
+						left: 32%;
+						top: 61%;
+					}
+		.box__img > img {
+			width: 100%;
+		}
+
+
 
 a:visited,
 a:link,
@@ -199,6 +248,9 @@ a:active {
 			padding: 10px 0;
 			width: 100%;
 		}
+	.box__text {
+		font-size: 25px;
+	}
 }
 @media all and (max-width: 768px) {
 	.card__title > br {
@@ -207,6 +259,12 @@ a:active {
 	.main__content {
 		margin: 50px 0;
 	}
+	.card__box {
+		width: 100%;
+	}
+		.alivio {
+			left: 18%;
+		}
 }
 @media all and (max-width: 360px) {
 	.navbar {
