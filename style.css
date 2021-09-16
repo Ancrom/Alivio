@@ -347,7 +347,7 @@ a:active {
 		.login__button {
 			padding: 10px 40px;
 		}
-	.title__bottom, .card__title  {
+	.title__bottom, .card__title, .title-upper  {
 		font-size: 45px;
 	}
 }
