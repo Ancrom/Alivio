@@ -180,6 +180,7 @@
 	.video__title-box {
 		display: flex;
 		flex-flow: column nowrap;
+		align-items: flex-start;
 		padding: 0 60px 0;
 		word-wrap: ;
 	}
@@ -197,7 +198,12 @@
 	.video-player {
 
 	}
-	
+
+	.card__button > a {
+		display: block;
+    height: 100%;
+    width: 100%;
+	}
 
 
 
@@ -256,8 +262,11 @@ a:active {
 		.video-player {
 			padding: 50px 0 0;
 		}
-		.video-player > img {
+		.video-player > a > img {
 			width: 100%;
+		}
+		.title-bottom {
+			padding: 10px 0 30px;
 		}
 }
 @media all and (min-width: 1024px) {
@@ -324,6 +333,9 @@ a:active {
 		.alivio {
 			left: 18%;
 		}
+	.video__title-box {
+		padding: 0;
+	}
 }
 @media all and (max-width: 360px) {
 	.navbar {
