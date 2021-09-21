@@ -369,6 +369,9 @@ a:active {
 			line-height: 35px;
 			align-self: center;
 		}
+		.product__card > .box__text {
+			padding: 15px 0 30px;
+		}
 }
 @media all and (min-width: 1024px) {
 	.background__img {
