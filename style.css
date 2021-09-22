@@ -293,7 +293,7 @@ a:active {
 a:hover {
 	color: #00b481;
 }
-.card__button:hover, .login__button:hover, .login__signin:hover {
+.card__button:hover, .login__button:hover  {
 	background-color: #418d58;
 }
 @media all and (max-width: 1366px) {
@@ -396,6 +396,9 @@ a:hover {
 		.product__card > .box__text {
 			padding: 15px 0 30px;
 		}
+	.login__signin:hover {
+		background-color: #418d58;
+	}
 }
 @media all and (min-width: 1024px) {
 	.background__img {
